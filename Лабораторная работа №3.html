@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Портфолио учителя информатики</title>
+</head>
+<body>
+    <!-- Шапка сайта с логотипом -->
+    <h1>Портфолио будущего учителя информатики</h1>
+    <img src="https://www.svgrepo.com/show/374093/teacher.svg" alt="Логотип учителя" width="100" height="100">
+    <p>Добро пожаловать на мою страницу-портфолио!</p>
+    
+    <!-- Навигационное меню с якорными ссылками -->
+    <nav>
+        <a href="#top">Главная</a>
+        <a href="#about">О педагоге</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#feedback">Обратная связь</a>
+    </nav>
+    
+    <!-- Раздел "О педагоге" с фотографией -->
+    <section id="about">
+        <h2>О педагоге</h2>
+        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Фотография будущего учителя информатики" width="300" height="200">
+        <p>Я — будущий учитель информатики. Интересуюсь современными технологиями, веб-разработкой и искусственным интеллектом.</p>
+    </section>
+    
+    <!-- Раздел "Контакты" с кликабельными ссылками -->
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:DAmelina@mail.ru">DAmelina@mail.ru</a></p>
+        <p>Телефон: <a href="tel:+79997773565">+7 (999) 777-35-65</a></p>
+    </section>
+    
+    <!-- Раздел "Обратная связь" -->
+    <section id="feedback">
+        <h2>Обратная связь</h2>
+        <p>Заинтересованы в сотрудничестве? Напишите мне!</p>
+        
+        <form action="/submit-form" method="post">
+            <div>
+                <label for="user_name">Ваше имя:</label><br>
+                <input type="text" id="user_name" name="user_name" required>
+            </div>
+            <br>
+            <div>
+                <label for="user_email">Ваш email:</label><br>
+                <input type="email" id="user_email" name="user_email" required>
+            </div>
+            <br>
+            <div>
+                <label for="user_message">Ваше сообщение:</label><br>
+                <textarea id="user_message" name="user_message" rows="5" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Отправить сообщение</button>
+        </form>
+    </section>
+    
+    <!-- Подвал сайта со ссылкой на Яндекс -->
+    <footer>
+        <p>© 2025 Портфолио учителя информатики</p>
+        <p>Поиск информации: <a href="https://yandex.ru" target="_blank">Яндекс</a></p>
+    </footer>
+</body>
+</html>

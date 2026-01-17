@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Портфолио учителя информатики</title>
+</head>
+<body>
+    <h1>Портфолио будущего учителя информатики</h1>
+    <p>Добро пожаловать на мою страницу-портфолио!</p>
+    
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О педагоге</a>
+        <a href="#">Контакты</a>
+        <a href="#feedback">Обратная связь</a>
+    </nav>
+    
+    <section>
+        <h2>О педагоге</h2>
+        <p>Я — будущий учитель информатики. Интересуюсь современными технологиями, веб-разработкой и искусственным интеллектом.</p>
+    </section>
+    
+    <section>
+        <h2>Контакты</h2>
+        <p>Email: DAmelina@mail.ru</p>
+        <p>Телефон: +7 (999) 777-35-65</p>
+    </section>
+    
+    <section id="feedback">
+        <h2>Обратная связь</h2>
+        <p>Заинтересованы в сотрудничестве? Напишите мне!</p>
+        
+        <form action="/submit-form" method="post">
+            <div>
+                <label for="user_name">Ваше имя:</label><br>
+                <input type="text" id="user_name" name="user_name" required>
+            </div>
+            <br>
+            <div>
+                <label for="user_email">Ваш email:</label><br>
+                <input type="email" id="user_email" name="user_email" required>
+            </div>
+            <br>
+            <div>
+                <label for="user_message">Ваше сообщение:</label><br>
+                <textarea id="user_message" name="user_message" rows="5" required></textarea>
+            </div>
+            <br>
+            <button type="submit">Отправить сообщение</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>© 2025 Портфолио учителя информатики</p>
+    </footer>
+</body>
+</html>

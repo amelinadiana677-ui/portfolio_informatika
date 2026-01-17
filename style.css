@@ -1,0 +1,492 @@
+/* Reset and base styles */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+input[type='file'] {
+    max-width: 100%;
+}
+
+/* ==================== Задание №1: Улучшение визуального стиля ==================== */
+
+body {
+    background-color: #f5f9ff; /* Более светлый пастельный фон */
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Заголовки с разными размерами и начертаниями */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Шапка сайта с улучшенным дизайном */
+header {
+    background: linear-gradient(135deg, #40E0D0, #1abc9c); /* Градиентный фон */
+    height: auto;
+    padding: 40px 20px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    padding-top: 20px;
+    color: white;
+    font-size: 32px; /* Размер как в задании */
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.welcome-text {
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* Навигационное меню с улучшенным дизайном */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+a {
+    color: #40E0D0;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: white;
+    background-color: #40E0D0;
+    border-bottom: none;
+}
+
+/* Раздел "О педагоге" с улучшенным дизайном */
+.about {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.picture {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #40E0D0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teacher-photo:hover {
+    transform: scale(1.05); /* Плавное увеличение при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    padding-bottom: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #555;
+}
+
+/* ==================== Задание №2: Карточки достижений ==================== */
+
+.achievements {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.achievements-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 4px solid #40E0D0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(130deg) brightness(98%) contrast(104%);
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Раздел контактов */
+.contacts {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Раздел обратной связи */
+.feedback {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #40E0D0;
+    outline: none;
+    background-color: white;
+}
+
+.submit-btn {
+    background-color: #40E0D0;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 20px auto 0;
+    box-shadow: 0 4px 8px rgba(64, 224, 208, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #1abc9c;
+    transform: translateY(-2px);
+}
+
+/* ==================== Задание №4: Улучшение подвала сайта ==================== */
+
+footer {
+    padding: 40px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer_text {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer_link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #40E0D0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon img {
+    filter: brightness(0) invert(1); /* Белые иконки */
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: brightness(0) invert(79%) sepia(51%) saturate(684%) hue-rotate(130deg) brightness(101%) contrast(101%);
+}
+
+/* ==================== Задание №3: Адаптивная вёрстка ==================== */
+
+@media (max-width: 768px) {
+    /* Общие стили для мобильных устройств */
+    .container {
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    
+    /* Адаптивное меню */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        margin: 20px 0;
+    }
+    
+    a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    /* Адаптивная шапка */
+    header {
+        padding: 30px 15px;
+    }
+    
+    .title {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .welcome-text {
+        font-size: 16px;
+    }
+    
+    /* Адаптивные карточки */
+    .achievements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    
+    /* Адаптивное изображение педагога */
+    .picture {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Адаптивная форма */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input, textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    /* Адаптивный подвал */
+    footer {
+        padding: 30px 15px;
+    }
+    
+    .social-icons {
+        gap: 20px;
+    }
+    
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Дополнительные медиазапросы для очень маленьких экранов */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .picture {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+}

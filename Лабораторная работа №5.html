@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Портфолио учителя информатики</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header>
+            <h1 class="title">Портфолио будущего учителя информатики</h1>
+            <img src="https://www.svgrepo.com/show/374093/teacher.svg" alt="Логотип учителя" class="logo">
+            <p class="welcome-text">Добро пожаловать на мою страницу-портфолио!</p>
+        </header>
+        
+        <!-- Навигационное меню -->
+        <nav class="menu">
+            <a href="#top">Главная</a>
+            <a href="#about">О педагоге</a>
+            <a href="#achievements">Достижения</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#feedback">Обратная связь</a>
+        </nav>
+        
+        <main>
+            <!-- Раздел "О педагоге" -->
+            <section id="about" class="about">
+                <h2>О педагоге</h2>
+                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                     alt="Фотография будущего учителя информатики" 
+                     class="picture teacher-photo">
+                <p>Я — будущий учитель информатики. Интересуюсь современными технологиями, веб-разработкой и искусственным интеллектом.</p>
+                <p>Моя цель — не только передавать знания о компьютерных науках, но и вдохновлять учеников на создание инновационных проектов, развитие цифровой грамотности и критического мышления.</p>
+            </section>
+            
+            <!-- Новый раздел "Достижения" -->
+            <section id="achievements" class="achievements">
+                <h2>Достижения</h2>
+                <div class="achievements-container">
+                    <div class="card">
+                        <img src="https://www.svgrepo.com/show/306584/conference.svg" alt="Иконка конференции" class="card-icon">
+                        <h3>Участие в конференции</h3>
+                        <p>Выступил с докладом "Цифровые технологии в образовании" на международной конференции в 2024 году.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.svgrepo.com/show/306432/course.svg" alt="Иконка курса" class="card-icon">
+                        <h3>Разработка курса</h3>
+                        <p>Разработал онлайн-курс "Основы программирования для школьников" с интерактивными заданиями.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.svgrepo.com/show/306518/article.svg" alt="Иконка статьи" class="card-icon">
+                        <h3>Публикация статьи</h3>
+                        <p>Опубликовал научную статью "Искусственный интеллект в современном образовании" в журнале "Информатика в школе".</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Раздел "Контакты" -->
+            <section id="contacts" class="contacts">
+                <h2>Контакты</h2>
+                <p>Email: <a href="mailto:DAmelina@mail.ru">DAmelina@mail.ru</a></p>
+                <p>Телефон: <a href="tel:+79997773565">+7 (999) 777-35-65</a></p>
+            </section>
+            
+            <!-- Раздел "Обратная связь" -->
+            <section id="feedback" class="feedback">
+                <h2>Обратная связь</h2>
+                <p>Заинтересованы в сотрудничестве? Напишите мне!</p>
+                
+                <form action="/submit-form" method="post">
+                    <div class="form-group">
+                        <label for="user_name">Ваше имя:</label>
+                        <input type="text" id="user_name" name="user_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_email">Ваш email:</label>
+                        <input type="email" id="user_email" name="user_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_message">Ваше сообщение:</label>
+                        <textarea id="user_message" name="user_message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </section>
+        </main>
+        
+        <!-- Подвал сайта -->
+        <footer>
+            <div class="footer-content">
+                <p class="footer_text">© 2025 Портфолио учителя информатики</p>
+                <p class="footer_text">Поиск информации: <a href="https://yandex.ru" target="_blank">Яндекс</a></p>
+                
+                <!-- Иконки социальных сетей -->
+                <div class="social-icons">
+                    <a href="https://vk.com" target="_blank" class="social-icon">
+                        <img src="https://www.svgrepo.com/show/475638/vk-1.svg" alt="ВКонтакте" width="30" height="30">
+                    </a>
+                    <a href="https://telegram.org" target="_blank" class="social-icon">
+                        <img src="https://www.svgrepo.com/show/475719/telegram.svg" alt="Telegram" width="30" height="30">
+                    </a>
+                    <a href="mailto:example@mail.ru" class="social-icon">
+                        <img src="https://www.svgrepo.com/show/475661/email.svg" alt="Email" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
